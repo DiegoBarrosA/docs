@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-29T20:39:17-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Diego’s blog</title><subtitle>Welcome to my blog! Here I share whatever&apos;s on my mind, from guides to random thoughts.</subtitle><entry><title type="html">Welcome to my blog</title><link href="http://localhost:4000/2025/08/29/first-post.html" rel="alternate" type="text/html" title="Welcome to my blog" /><published>2025-08-29T00:00:00-04:00</published><updated>2025-08-29T00:00:00-04:00</updated><id>http://localhost:4000/2025/08/29/first-post</id><content type="html" xml:base="http://localhost:4000/2025/08/29/first-post.html"><![CDATA[<h1 id="hello-world">Hello World!</h1>
+
+<p>Welcome to my first post on my new Jekyll site! I’m excited to start sharing my thoughts and projects here.</p>
+
+<h2 id="about-this-site">About This Site</h2>
+
+<p>This site is built using <a href="https://jekyllrb.com/">Jekyll</a>, a static site generator that’s perfect for creating blogs and personal websites. Here are some reasons why I chose Jekyll:</p>
+
+<ul>
+  <li>It’s easy to set up and customize.</li>
+  <li>It supports Markdown, which is a simple way to format text.</li>
+  <li>It’s fast and secure since it generates static HTML files.</li>
+</ul>
+
+<h2 id="testing-different-elements">Testing Different Elements</h2>
+
+<p>Below are some elements I’m testing to see how they render on the site.</p>
+
+<h3 id="lists">Lists</h3>
+
+<p><strong>Unordered List:</strong></p>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<p><strong>Ordered List:</strong></p>
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+
+<h3 id="code-block">Code Block</h3>
+
+<p>Here’s a simple code snippet:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, world!</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="nf">hello_world</span><span class="p">()</span>
+</code></pre></div></div>]]></content><author><name>Diego Barros</name></author><summary type="html"><![CDATA[Hello World!]]></summary></entry></feed>

@@ -1,0 +1,30 @@
+title: "Documentación Diego Barros"
+theme: minima
+markdown: kramdown
+baseurl: "" # No subcarpeta
+url: "https://docs.diegobarrosaraya.com"
+
+# Incluir CSS personalizado
+sass:
+  style: compressed
+
+# Permalinks amigables para proyectos
+defaults:
+  - scope:
+      path: "projects/"
+    values:
+      layout: "default"
+      permalink: "/projects/:path/"
+
+# Excluir archivos y carpetas innecesarias de la build
+exclude:
+  - fetch_readmes.py
+  - repos.yaml
+  - README.md
+  - "*.sh"
+  - "*.pyc"
+  - __pycache__
+
+# Configuración de idioma y meta
+lang: es
+description: "Sitio centralizado de documentación para proyectos de Diego Barros"
