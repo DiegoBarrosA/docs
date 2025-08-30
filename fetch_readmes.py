@@ -1,6 +1,3 @@
-docs/fetch_readmes.py
-```
-```python
 import os
 import re
 import requests
