@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 3 * * *" # Todos los días a las 03:00 UTC
 
+permissions:
+  contents: write
+
 jobs:
   update-readmes:
     runs-on: ubuntu-latest
