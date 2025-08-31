@@ -4,7 +4,7 @@ import requests
 import yaml
 from urllib.parse import urlparse
 
-PROJECTS_DIR = "docs/projects"
+PROJECTS_DIR = "projects"
 
 def load_repos(config_file="repos.yaml"):
     with open(config_file, "r") as f:
