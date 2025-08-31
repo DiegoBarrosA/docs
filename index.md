@@ -5,7 +5,7 @@ Bienvenido a la documentación centralizada de Diego Barros.
 ## Proyectos
 
 - [agranelos-functions-crud](./projects/agranelos-functions-crud/)
-- [otro-proyecto](./projects/otro-proyecto/)
+- [agranelos-bff](./projects/agranelos-bff/)
 
 ---
 
