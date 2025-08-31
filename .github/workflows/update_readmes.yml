@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add docs/projects/
+          git add projects/
           if ! git diff --cached --quiet; then
             git commit -m "Update project READMEs [auto]"
             git push
