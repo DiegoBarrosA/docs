@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /projects.json
+---
+[
+{% assign first = true %}
+{% for project in site.pages %}
+  {% if project.path contains 'projects/' and project.path contains 'index.md' %}
+    {% unless first %},{% endunless %}
+    {
+      "name": "{{ project.title | escape }}",
+      "url": "{{ site.url }}{{ project.url }}",
+      "github": "https://github.com/{{ project.path | split: '/' | last | split: '.' | first }}",
+      "excerpt": {{ project.excerpt | jsonify }},
+      "content": {{ project.content | strip_newlines | jsonify }}
+    }
+    {% assign first = false %}
+  {% endif %}
+{% endfor %}
+]
