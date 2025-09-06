@@ -1,13 +1,12 @@
-# Documentación de Proyectos
 
-Bienvenido a la documentación centralizada de Diego Barros.
+Welcome to the centralized documentation of Diego Barros.
 
-## Proyectos
+## Projects
 
 - [agranelos-functions-crud](./projects/agranelos-functions-crud/)
 - [agranelos-bff](./projects/agranelos-bff/)
 
 ---
 
-Cada proyecto tiene su propia documentación en la carpeta correspondiente dentro de `projects/`.
-Este sitio se actualiza automáticamente con los README.md de cada repositorio.
+Each project has its own documentation in the corresponding folder inside `projects/`.
+This site is automatically updated with the README.md of each repository.
