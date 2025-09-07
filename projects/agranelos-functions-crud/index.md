@@ -1,58 +1,63 @@
+# Sistema Inventario - Bodegas Agranelos
 
+## Arquitectura del Sistema
 
+La arquitectura del sistema de inventario de productos está diseñada para ser modular, escalable y eficiente, aprovechando tecnologías modernas de desarrollo y despliegue de servicios en la nube. Aquí hay una descripción detallada de los componentes y cómo interactúan entre sí:
 
-## System Architecture
+1. **Frontend (No Aplicable):**
 
-The inventory system architecture is designed to be modular, scalable, and efficient, leveraging modern cloud service development and deployment technologies. Here is a detailed description of the components and how they interact:
-
-1. **Frontend (Not Applicable):**
-    - Although a frontend component usually exists for end-user interaction, in this specific case it is not required. Interactions with the system are performed via direct API calls exposed by the backend.
+    - Aunque tradicionalmente existe un componente frontend para interactuar con los usuarios finales, en este caso específico no se requiere su implementación. Las interacciones con el sistema se realizarán a través de llamadas directas a las APIs expuestas por el backend.
 2. **Backend:**
-    - **BFF Microservice (Backend For Frontend):**
-        - This microservice acts as an intermediary handling incoming requests.
-        - Its main responsibility is to orchestrate calls to the appropriate serverless functions based on the received request.
-        - Exposes RESTful APIs that allow clients to perform operations on products and warehouses. These APIs return data in JSON format for easy consumption.
-3. **Serverless Functions:**
-    - These functions are implemented in Java and are responsible for executing specific business operations.
-    - **Key Functions:**
-        - Perform CRUD operations (Create, Read, Update, Delete) on products and warehouses.
-        - Manage logic for handling inventory changes, such as registering product entries and exits in warehouses.
-4. **Database:**
-    - Contains all relevant system information, including product data, warehouses, current inventory, and historical movement records.
-    - Serverless functions interact directly with this database for read and write operations.
-5. **Communication and Data Flow:**
-    - Client requests (or direct calls) are received by the BFF Microservice.
-    - The BFF processes requests and determines which serverless functions should be invoked to fulfill the request.
-    - Serverless functions perform the necessary operations on the database and return results to the BFF.
-    - The BFF responds to the client with processed and formatted JSON results.
-6. **Technologies Used:**
-    - **Docker:** Used for development and testing, allowing local emulation of a production environment and facilitating dependency and configuration management.
-    - **Git and Collaborative Tools:** For source code management and effective team collaboration, ensuring organized development and version control.
-    - **Java and Spring Boot:** Main technologies for implementing microservices and serverless functions, leveraging their robust capabilities for enterprise application development.
 
-This architecture leverages the serverless nature for functions that interact with the database, enabling automatic scalability and efficient resource management according to demand, ensuring optimal performance and high system availability.
+    - **Microservicio BFF (Backend For Frontend):**
+        - Este microservicio actúa como un intermediario que maneja las solicitudes entrantes.
+        - Su responsabilidad principal es orquestar las llamadas a las funciones serverless correspondientes según la solicitud recibida.
+        - Expone APIs RESTful que permiten al cliente realizar operaciones sobre productos y bodegas. Estas APIs devuelven datos en formato JSON, facilitando su consumo por parte del cliente.
+3. **Funciones Serverless:**
+
+    - Estas funciones están implementadas en Java y son responsables de ejecutar operaciones específicas de negocio.
+    - **Funciones Clave:**
+        - Realizan operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre productos y bodegas.
+        - Gestionan la lógica para manejar los cambios en el inventario, como registrar entradas y salidas de productos en las bodegas.
+4. **Base de Datos:**
+
+    - Contiene toda la información relevante del sistema, incluyendo datos de productos, bodegas, inventario actual y registros históricos de movimientos.
+    - Las funciones serverless interactúan directamente con esta base de datos para realizar operaciones de lectura y escritura.
+5. **Comunicación y Flujo de Datos:**
+
+    - Las solicitudes del cliente (o llamadas directas) son recibidas por el Microservicio BFF.
+    - El BFF procesa las solicitudes y determina qué funciones serverless deben ser invocadas para satisfacer la solicitud.
+    - Las funciones serverless llevan a cabo las operaciones necesarias en la base de datos y devuelven los resultados al BFF.
+    - El BFF responde al cliente con los resultados procesados y formateados en JSON.
+6. **Tecnologías Utilizadas:**
+
+    - **Docker:** Utilizado para el desarrollo y pruebas, permitiendo emular un entorno de producción localmente y facilitando la gestión de dependencias y configuraciones.
+    - **Git y Herramientas Colaborativas:** Para la gestión del código fuente y la colaboración efectiva entre los miembros del equipo, asegurando un desarrollo organizado y control de versiones.
+    - **Java y Spring Boot:** Tecnologías principales para la implementación de los microservicios y funciones serverless, aprovechando sus capacidades robustas para desarrollar aplicaciones empresariales.
+
+Esta arquitectura aprovecha la naturaleza serverless para las funciones que interactúan con la base de datos, lo que permite escalabilidad automática y manejo eficiente de recursos según la demanda, asegurando un rendimiento óptimo y una alta disponibilidad del sistema.
 
 ![agranelos-arquitectura.png](assets/agranelos-arquitectura.png)
 
-## Database
+## Base de Datos
 
 ```mermaid
 erDiagram
-    PRODUCT ||--o{ INVENTORY : contains
-    WAREHOUSE ||--o{ INVENTORY : has
-    PRODUCT ||--o{ MOVEMENT : records
-    WAREHOUSE ||--o{ MOVEMENT : affects
-    PRODUCT {
+    PRODUCTO ||--o{ INVENTARIO : contiene
+    BODEGA ||--o{ INVENTARIO : tiene
+    PRODUCTO ||--o{ MOVIMIENTO : registra
+    BODEGA ||--o{ MOVIMIENTO : afecta
+    PRODUCTO {
         int ID PK
-        string Name
-        string Description
-        float Price
-        int StockQuantity
+        string Nombre
+        string Descripcion
+        float Precio
+        int CantidadEnStock
     }
-    WAREHOUSE {
+    BODEGA {
         int ID PK
-        string Name
-        string Location
+        string Nombre
+        string Ubicacion
         int Capacidad
     }
     INVENTARIO {
