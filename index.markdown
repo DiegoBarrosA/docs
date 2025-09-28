@@ -1,15 +1,67 @@
 ---
-layout: home
-title: "Welcome to My Blog"
-date: 2025-08-29
+layout: default
+title: "Documentación Diego Barros"
 ---
 
-Welcome to my blog!
-I am passionate about open-source technology and empowering teams to deliver innovative solutions. With a strong foundation in computer science and over a decade of experience as a Linux user, I specialize in designing, implementing, and optimizing IT infrastructure using open-source tools and modern technologies.
-My expertise spans across Atlassian products, cloud-native environments like Docker and OCI, and embedded systems, with a focus on scalability, collaboration, and automation. As a Senior Engineer, I have led technical teams, driven project execution, and managed stakeholders in high-impact environments.
-Through my consulting experience, I have collaborated with global technology leaders, helping them streamline workflows, enhance productivity, and achieve strategic IT goals. I thrive at the intersection of technology and leadership, bridging the gap between technical teams and business stakeholders to deliver results.
-Beyond my professional work, I remain an avid learner—exploring everything from legacy Unix systems to cutting-edge Linux distributions—and am deeply committed to the open-source community.
-Let’s connect to discuss IT innovation, team leadership, or how technology can solve complex challenges.
-Stay tuned for insightful articles, tips, and discussions on the latest in technology and open-source solutions.
+# Documentación Diego Barros
 
-Happy reading!
+Bienvenido al sitio centralizado de documentación para todos mis proyectos. Esta plataforma recopila automáticamente la documentación de los repositorios y la organiza de manera accesible.
+
+## Proyectos Documentados
+
+### [Diego Barros Resume Generator](projects/diego-barros-resume-generator/)
+Generador profesional de currículos a partir de perfiles de LinkedIn con cumplimiento de privacidad incorporado.
+
+- **Características**: Extracción inteligente, múltiples formatos (Markdown, HTML, JSON), arquitectura moderna
+- **Documentación completa**: [Ver documentación →](projects/diego-barros-resume-generator/)
+
+### [Agrânelos Functions CRUD](projects/agranelos-functions-crud/) 
+Sistema CRUD basado en funciones para el proyecto Agrânelos.
+
+- **Documentación**: [Ver documentación →](projects/agranelos-functions-crud/)
+
+### [Agrânelos BFF](projects/agranelos-bff/)
+Backend for Frontend (BFF) para la aplicación Agrânelos.
+
+- **Documentación**: [Ver documentación →](projects/agranelos-bff/)
+
+---
+
+## Sobre Mí
+
+---
+layout: home
+title: "Documentation Hub"
+---
+
+# Documentation Hub
+
+Centralized documentation for Diego Barros Araya's projects and technical work.
+
+## Projects
+
+This site automatically collects and organizes documentation from various repositories:
+
+- **[diego-barros-resume-generator](/projects/diego-barros-resume-generator/)** - Professional resume generation tool with privacy compliance
+- **[agranelos-functions-crud](/projects/agranelos-functions-crud/)** - CRUD operations for serverless functions
+- **[agranelos-bff](/projects/agranelos-bff/)** - Backend for Frontend architecture implementation
+
+## Navigation
+
+- [Main Website](https://diegobarrosaraya.com) - Portfolio and professional information
+- [Blog](https://blog.diegobarrosaraya.com) - Technical articles and insights
+- [Documentation](https://docs.diegobarrosaraya.com) - This site
+
+---
+
+*Documentation is automatically updated daily from source repositories.*
+
+**Áreas de expertise:**
+- Productos Atlassian
+- Entornos cloud-native (Docker, OCI)
+- Sistemas embebidos
+- Liderazgo técnico y gestión de stakeholders
+
+---
+
+*Esta documentación se actualiza automáticamente desde los repositorios de GitHub.*

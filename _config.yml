@@ -15,6 +15,10 @@ defaults:
     values:
       layout: "default"
       permalink: "/projects/:path/"
+  - scope:
+      path: "projects/*/docs/"
+    values:
+      layout: "default"
 
 # Excluir archivos y carpetas innecesarias de la build
 exclude:
