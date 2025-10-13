@@ -1,0 +1,59 @@
+title: Agranelos BFF Documentation
+description: Backend For Frontend service for Agranelos inventory management system
+baseurl: "/agranelos-bff"
+url: "https://diegobarrosa.github.io"
+
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+collections:
+  api:
+    output: true
+    permalink: /:collection/:name/
+  development:
+    output: true
+    permalink: /:collection/:name/
+  testing:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "api"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "development"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "testing"
+    values:
+      layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

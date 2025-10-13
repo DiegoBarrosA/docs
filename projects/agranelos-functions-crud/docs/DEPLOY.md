@@ -1,8 +1,17 @@
-# 🚀 Guía de Despliegue en Azure
+---
+title: Azure Deployment Guide
+layout: default
+---
+
+<link rel="stylesheet" href="https://diegobarrosa.github.io/diegobarrosaraya-assets/shared-theme.css">
+<link rel="stylesheet" href="https://diegobarrosa.github.io/diegobarrosaraya-assets/shared-footer.css">
+<script src="https://diegobarrosa.github.io/diegobarrosaraya-assets/shared-theme.js"></script>
+
+# Guía de Despliegue en Azure
 
 Esta guía te llevará paso a paso por el proceso de despliegue del Sistema de Inventario Agranelos en Azure Cloud.
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 1. [Prerrequisitos](#prerrequisitos)
 2. [Configuración Inicial](#configuración-inicial)
@@ -19,11 +28,11 @@ Esta guía te llevará paso a paso por el proceso de despliegue del Sistema de I
 
 ### Software Requerido
 
-- ✅ **Java JDK 11** - [Descargar](https://adoptium.net/)
-- ✅ **Maven 3.6+** - [Descargar](https://maven.apache.org/download.cgi)
-- ✅ **Azure CLI** - [Descargar](https://docs.microsoft.com/cli/azure/install-azure-cli)
-- ✅ **Azure Functions Core Tools** - [Descargar](https://docs.microsoft.com/azure/azure-functions/functions-run-local)
-- ✅ **Git** - [Descargar](https://git-scm.com/)
+- **Java JDK 11** - [Descargar](https://adoptium.net/)
+- **Maven 3.6+** - [Descargar](https://maven.apache.org/download.cgi)
+- **Azure CLI** - [Descargar](https://docs.microsoft.com/cli/azure/install-azure-cli)
+- **Azure Functions Core Tools** - [Descargar](https://docs.microsoft.com/azure/azure-functions/functions-run-local)
+- **Git** - [Descargar](https://git-scm.com/)
 
 ### Cuenta Azure
 
@@ -118,13 +127,13 @@ chmod +x scripts/deploy-azure.sh
 ```
 
 Este script:
-1. ✅ Crea el grupo de recursos
-2. ✅ Crea la cuenta de almacenamiento
-3. ✅ Crea Azure Functions App
-4. ✅ Crea Event Grid Topic
-5. ✅ Configura variables de entorno
-6. ✅ Crea suscripciones a eventos
-7. ✅ Compila y despliega las funciones
+1. Crea el grupo de recursos
+2. Crea la cuenta de almacenamiento
+3. Crea Azure Functions App
+4. Crea Event Grid Topic
+5. Configura variables de entorno
+6. Crea suscripciones a eventos
+7. Compila y despliega las funciones
 
 ### Tiempo Estimado
 ⏱️ **15-20 minutos**
@@ -586,12 +595,12 @@ az group delete \
 
 Una vez desplegado:
 
-1. ✅ Configurar CI/CD con GitHub Actions
-2. ✅ Implementar autenticación con Azure AD
-3. ✅ Configurar API Management para gestión avanzada
-4. ✅ Implementar caché con Azure Redis Cache
-5. ✅ Configurar backup automático de base de datos
-6. ✅ Implementar monitoring avanzado con dashboards personalizados
+1. Configurar CI/CD con GitHub Actions
+2. Implementar autenticación con Azure AD
+3. Configurar API Management para gestión avanzada
+4. Implementar caché con Azure Redis Cache
+5. Configurar backup automático de base de datos
+6. Implementar monitoring avanzado con dashboards personalizados
 
 ---
 
