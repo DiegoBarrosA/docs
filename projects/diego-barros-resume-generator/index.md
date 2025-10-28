@@ -11,6 +11,7 @@ Esta página contiene la documentación completa del proyecto diego-barros-resum
 
 - [Compliance](docs/COMPLIANCE.md)
 - [Readme](docs/README.md)
+- [Index](docs/ai_context/index.md)
 - [Cli Usage](docs/cli-usage.md)
 - [Github Actions Troubleshooting](docs/github-actions-troubleshooting.md)
 - [Index](docs/index.md)
